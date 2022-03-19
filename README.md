@@ -4,11 +4,11 @@
   <h3 align="center">RunHacx Plugin</h3>
 </div>
 
-# RunHacx Plugin for Break The Code 2
+## Introduction
 
 The RunHacx.exe plugin is an advanced free and universal game trainer for the Break The Code 2 operating system. It is a tool for beginner Codebreakers who want the ability to use cheatcodes in the game. Since this is a research project it comes at a cost of no GUI and limited usability. 
 
-_Neo who? You are the Hackerman now..._
+_Neo who? You are the Hackerman now...__
 
 Note: This will not work on a local version of the OS, it needs a secure ssl tunnel to https://breakthecode.tech 
 
