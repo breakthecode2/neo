@@ -1,6 +1,8 @@
 <br>
 <div align="center">
-  <img src="runhacx.png" alt="Logo" width="128" height="128">
+  <a href="https://breakthecode.tech">
+   <img src="runhacx.png" alt="Logo" width="128" height="128">
+  </a>
   <h3 align="center">RunHacx Plugin</h3>
   <p align="center">[For Break The Code 2]</p>
 </div>
