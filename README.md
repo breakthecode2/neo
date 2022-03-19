@@ -9,7 +9,7 @@
 
 ## Introduction
 
-The RunHacx.exe plugin is an advanced free and universal game trainer for the Break The Code 2 operating system. It is a tool for beginner Codebreakers who want the ability to use cheatcodes in the game. Since this is a research project it comes at a cost of no GUI and limited usability.
+RunHacx.exe is an advanced free and universal game trainer plugin for the Break The Code 2 operating system. It is a tool for beginner Codebreakers who want the ability to use cheatcodes in the game. Since this is a research project it comes at a cost of no GUI and limited usability.
 
 The **dynamic memory support** sets ugtrain apart. An integrated preloader, a memory discovery, and a memory hacking library are included for this. These also come with **automatic adaptation** for dynamic memory so that you can
 use them right away on your system after executing it.
