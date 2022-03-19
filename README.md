@@ -20,7 +20,7 @@ Note: This will not work on a local version of the OS, it needs a secure ssl tun
 
 ## Getting Started
 
-Clone the repository using the GitHub CLI in the Break The Code 2 Terminal & then simply follow the instructions to install the plugin.
+Clone the repository using the GitHub CLI in the Break The Code 2 `Terminal` & then simply follow the instructions to install the plugin.
 
 1. Clone the repo
    ```sh
