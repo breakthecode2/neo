@@ -38,7 +38,7 @@ Clone the repository using the GitHub CLI in the Break The Code 2 `Terminal` & t
 
 Enter a cheatcode & runhacx will take care of the rest, tapping into the core system server it will execute the cheatcode & have the OS perform the mapped action.
 
-Use the code `HACKERMAN` to get a 100 score boost.
+Use the code `HACKERMAN` to get a score boost of 100.
 
 ## Contributing
 
