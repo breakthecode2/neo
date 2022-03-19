@@ -1,0 +1,26 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	min-height: 600px;
+	background: #000000;
+	
+	// Small devices (landscape phones, 576px and up)
+	@media (min-width: 576px) {
+		min-height: 550px;
+	}
+}
+html.overflow-hidden {
+	overflow: hidden;
+	
+	body {
+		overflow: hidden;
+	}
+}
+body {
+	font-family: "Pixelated MS Sans Serif",Arial;
+    font-size: 11px;
+	line-height: 1.5;
+	-webkit-font-smoothing: subpixel-antialiased;
+}

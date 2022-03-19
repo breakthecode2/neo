@@ -1,0 +1,49 @@
+.run-hacx {
+	&.window-body {
+		margin: 16px 8px 8px !important;
+
+		input {
+			display: block;
+			width: 100%;
+			margin-bottom: 8px;
+		}
+
+		.field-row {
+			justify-content: flex-end;
+		}
+	}
+
+	> section {
+		display: flex;
+		margin-bottom: 8px;
+
+		> div {
+			&:first-child {
+				width: 32px;
+			}
+			&:last-child {
+				flex-grow: 1;
+				padding-left: 8px;
+			}
+		}
+	}
+
+	.run-hacx__loading {
+		display: block;
+		color: #a67c00;
+		margin-top: -5px;
+		margin-bottom: 8px;
+	}
+	.run-hacx__error {
+		display: block;
+		color: #DD4B39;
+		margin-top: -5px;
+		margin-bottom: 8px;
+	}
+	.run-hacx__success {
+		display: block;
+		color: #008000;
+		margin-top: -5px;
+		margin-bottom: 8px;
+	}
+}
