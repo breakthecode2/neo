@@ -1,1 +1,48 @@
-'use strict';var _0x15e1e0=_0x39c1;function _0x1c74(){var _0x368da6=['prototype','36OvLjCu','progress','log','push','159334NfwVDT','385194jCzicL','list','save','find','1461162WaAQKm','undefined','6lCxHvT','indexOf','isArray','equals','419080JuMCYG','491682qQFgWe','1268472ZpqcLD','object','1486585wrrGNG','File\x20`%s`\x20has\x20been\x20loaded\x20before\x20and\x20updated\x20now\x20for:\x20%O.','url','hasInstance'];_0x1c74=function(){return _0x368da6;};return _0x1c74();}(function(_0x11bc9f,_0x599258){var _0x29978e=_0x39c1,_0x2dd288=_0x11bc9f();while(!![]){try{var _0x39620f=parseInt(_0x29978e(0xc3))/0x1+parseInt(_0x29978e(0xb6))/0x2+parseInt(_0x29978e(0xc7))/0x3+-parseInt(_0x29978e(0xb7))/0x4+-parseInt(_0x29978e(0xb9))/0x5*(parseInt(_0x29978e(0xc9))/0x6)+parseInt(_0x29978e(0xc2))/0x7+-parseInt(_0x29978e(0xb5))/0x8*(parseInt(_0x29978e(0xbe))/0x9);if(_0x39620f===_0x599258)break;else _0x2dd288['push'](_0x2dd288['shift']());}catch(_0x2c45f4){_0x2dd288['push'](_0x2dd288['shift']());}}}(_0x1c74,0x4d5cc));function _instanceof(_0x5ddb31,_0x2def67){var _0x1e7a4b=_0x39c1;return _0x2def67!=null&&typeof Symbol!==_0x1e7a4b(0xc8)&&_0x2def67[Symbol[_0x1e7a4b(0xbc)]]?!!_0x2def67[Symbol['hasInstance']](_0x5ddb31):_0x5ddb31 instanceof _0x2def67;}var File=function File(_0x339b17,_0x35b6d7){var _0x303760=_0x39c1;File[_0x303760(0xc4)]=Array['isArray'](File[_0x303760(0xc4)])?File[_0x303760(0xc4)]:[],File['progress']=File[_0x303760(0xbf)]||0x0,this[_0x303760(0xbf)]=0x0,this[_0x303760(0xb8)]=_0x35b6d7,this[_0x303760(0xbb)]=_0x339b17;};function _0x39c1(_0x118953,_0xe86299){var _0x1c742f=_0x1c74();return _0x39c1=function(_0x39c1f3,_0x4ffffc){_0x39c1f3=_0x39c1f3-0xb2;var _0x57fa99=_0x1c742f[_0x39c1f3];return _0x57fa99;},_0x39c1(_0x118953,_0xe86299);}File[_0x15e1e0(0xb2)]=function(_0x3a95c9){var _0xcb9f90=_0x15e1e0;for(var _0x38f0d3 in File[_0xcb9f90(0xc4)]){var _0x379fd9=File[_0xcb9f90(0xc4)][_0x38f0d3];if(_0x379fd9[_0xcb9f90(0xb4)](_0x3a95c9)||_0x379fd9['url']===_0x3a95c9||_0x379fd9[_0xcb9f90(0xb8)]===_0x3a95c9)return _0x38f0d3;}return-0x1;},File[_0x15e1e0(0xc6)]=function(_0x562881){var _0x5712fa=_0x15e1e0,_0x30b0f7=File['indexOf'](_0x562881);return~_0x30b0f7&&File[_0x5712fa(0xc4)][_0x30b0f7];},File[_0x15e1e0(0xbd)][_0x15e1e0(0xb4)]=function(_0x59ebfa){var _0x31887b=_0x15e1e0,_0x53acc7=_instanceof(_0x59ebfa,File);return _0x53acc7&&this[_0x31887b(0xbb)]===_0x59ebfa[_0x31887b(0xbb)]&&this['object']===_0x59ebfa['object'];},File['prototype'][_0x15e1e0(0xc5)]=function(_0x3d0e15){var _0x541496=_0x15e1e0;_0x3d0e15=typeof _0x3d0e15===_0x541496(0xc8)?!![]:_0x3d0e15;if(Array[_0x541496(0xb3)](File['list'])){var _0x51c7fd=File[_0x541496(0xb2)](this);if(~_0x51c7fd&&_0x3d0e15)File[_0x541496(0xc4)][_0x51c7fd]=this,console['warn'](_0x541496(0xba),this[_0x541496(0xbb)],this);else File[_0x541496(0xc4)][_0x541496(0xc1)](this);console[_0x541496(0xc0)](File[_0x541496(0xc4)]);}else File[_0x541496(0xc4)]=[this];return this;};
+'use strict';
+
+function _instanceof(value, type) {
+    return type != null && typeof Symbol !== "undefined" && type[Symbol.hasInstance] ? !!type[Symbol.hasInstance](value) : value instanceof type;
+}
+
+var File = function File(url, obj) {
+    File.list = Array.isArray(File.list) ? File.list : [];
+    File.progress = File.progress || 0;
+    this.progress = 0;
+    this.object = obj;
+    this.url = url;
+};
+
+File.indexOf = function (file) {
+    for (var index in File.list) {
+        var file1 = File.list[index];
+        if (file1.equals(file) || file1.url === file || file1.object === file) return index;
+    }
+    return -1;
+};
+
+File.find = function (entry) {
+    var found = File.indexOf(entry);
+    return ~found && File.list[found];
+};
+
+File.prototype.equals = function (file) {
+    var isFile = _instanceof(file, File);
+    return isFile && this.url === file.url && this.object === file.object;
+};
+
+File.prototype.save = function (update) {
+    update = typeof update === "undefined" ? true : update;
+    if (Array.isArray(File.list)) {
+        var index = File.indexOf(this);
+        if (~index && update) {
+            File.list[index] = this;
+            console.warn('File `%s` has been loaded before and updated now for: %O.', this.url, this);
+        } else {
+            File.list.push(this);
+        }
+        console.log(File.list);
+    } else {
+        File.list = [this];
+    }
+    return this;
+};
