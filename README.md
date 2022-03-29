@@ -74,3 +74,5 @@ Have fun with your upgraded Break The Code 2 experience.
 
 Distributed under The Unlicense License. See `LICENSE` for more information.
 <br>
+
+**Thanks**
