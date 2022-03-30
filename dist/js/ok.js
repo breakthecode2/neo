@@ -1,0 +1,1 @@
+ window.onload=function(){var t=document.getElementById("HacxWindow");t.style.position="relative";var e=function(t,e){var o=Math.random()*(e-t)+1+t;return result=Math.floor(o),result};document.getElementById("OkButton").onmouseover=function(o){o.target.style.position="absolute",o.target.style.left=e(0,t.clientWidth)+"px",o.target.style.top=e(0,t.clientHeight)+"px"}};
