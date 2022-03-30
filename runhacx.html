@@ -9,12 +9,12 @@
 
 	<title>RunHacx Plugin</title>
 
-	<link href="./dist/css/98.css" rel="stylesheet" type="text/css">
+	<link href="./dist/css/98dark.css" rel="stylesheet" type="text/css">
 	<link href="./dist/css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 	<div class="window-layer">
-		<div class="window" style="width: 350px; height: auto;">
+		<div class="window" style="width: 400px; height: auto;">
 			<div class="title-bar">
 				<div class="title-bar-text"><img src="./dist/img/run.png"><span>RunHacx</span></div>
 				<div class="title-bar-controls">
@@ -35,6 +35,15 @@
 				</section>
 
 				<div class="field-row">
+					<section class="theme-select">
+						<div><u>T</u>heme:</div>
+						<div>
+							<select class="sel">
+								<option>Light</option>
+								<option>Dark</option>
+							</select>
+						</div>
+					</section>
 					<button type="button">Ok</button>
 					<button type="button">Cancel</button>
 					<button type="button">Browse...</button>
@@ -42,5 +51,12 @@
 			</div>
 		</div>
 	</div>
+
+	<script>
+		var select = document.querySelector('.sel');
+		select.addEventListener('change',function(){
+			console.log(select.value);
+		});
+	</script>
 </body>
 </html>
