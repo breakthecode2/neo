@@ -9,7 +9,7 @@
 
 	<title>RunHacx Plugin</title>
 
-	<link href="./dist/css/98dark.css" rel="stylesheet" type="text/css">
+	<link href="./dist/css/98.css" rel="stylesheet" type="text/css">
 	<link href="./dist/css/main.css" rel="stylesheet" type="text/css">
 </head>
 <body>
@@ -41,6 +41,7 @@
 							<select class="sel">
 								<option>Light</option>
 								<option>Dark</option>
+								<option>BTC2</option>
 							</select>
 						</div>
 					</section>
@@ -54,20 +55,34 @@
 
 	<script>
 		var select = document.querySelector('.sel');
-		var tb = document.querySelector('.title-bar');
+		var title_bar = document.querySelector('.title-bar');
 		
 		select.addEventListener('change',function(){
-			if(select.value == "Dark"){
-				tb.style.background = "#400080";
-				document.getElementById("title-bar-image").src="./dist/img/run-dark.png";
-				document.getElementById("start-menu-image").src="./dist/img/run-dark.png";
-			}
-			if(select.value == "Light"){
-				tb.style.background = "linear-gradient(90deg,navy,#1084d0)";
-				document.getElementById("title-bar-image").src="./dist/img/run.png";
-				document.getElementById("start-menu-image").src="./dist/img/run.png";
-			}
+			var values = changeTheme(select.value);
+			title_bar.style.background = values[0];
+			document.getElementById("title-bar-image").src=values[1];
+			document.getElementById("start-menu-image").src=values[1];
 		});
+
+		function changeTheme(mode){
+			switch(mode){
+				case "Light":
+					return [
+						"linear-gradient(90deg,navy,#1084d0)",
+						"./dist/img/run.png"
+					]
+				case "Dark":
+					return [
+						"#400080",
+						"./dist/img/run-dark.png"
+					]
+				case "BTC2":
+					return [
+						"linear-gradient(90deg,#1C649A,#678FAF)",
+						"./dist/img/run-btc2.png"
+					]
+			}
+		}
 	</script>
 </body>
 </html>
