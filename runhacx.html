@@ -16,7 +16,7 @@
 	<div class="window-layer">
 		<div class="window" style="width: 400px; height: auto;">
 			<div class="title-bar">
-				<div class="title-bar-text"><img src="./dist/img/run.png"><span>RunHacx</span></div>
+				<div class="title-bar-text"><img id="title-bar-image" src="./dist/img/run.png"><span>RunHacx</span></div>
 				<div class="title-bar-controls">
 					<button aria-label="Close"></button>
 				</div>
@@ -24,7 +24,7 @@
 
 			<div class="window-body run-hacx">
 				<section>
-					<div><img class="start-menu__icon" src="./dist/img/run.png"></div>
+					<div><img id="start-menu-image" class="start-menu__icon" src="./dist/img/run.png"></div>
 					<div><p>Type in a cheatcode or command and the system will attempt running it for you.</p></div>
 				</section>
 				<section>
@@ -54,8 +54,19 @@
 
 	<script>
 		var select = document.querySelector('.sel');
+		var tb = document.querySelector('.title-bar');
+		
 		select.addEventListener('change',function(){
-			console.log(select.value);
+			if(select.value == "Dark"){
+				tb.style.background = "#400080";
+				document.getElementById("title-bar-image").src="./dist/img/run-dark.png";
+				document.getElementById("start-menu-image").src="./dist/img/run-dark.png";
+			}
+			if(select.value == "Light"){
+				tb.style.background = "linear-gradient(90deg,navy,#1084d0)";
+				document.getElementById("title-bar-image").src="./dist/img/run.png";
+				document.getElementById("start-menu-image").src="./dist/img/run.png";
+			}
 		});
 	</script>
 </body>
