@@ -60,7 +60,7 @@ There are 3 main ways of contributing to this project.
 4. Ask for unlimited Cheatcodes
 5. Call the Police
 
-**Join the 💎 Gang**
+**Join the . Gang**
 
 Have fun with your upgraded Break The Code 2 experience.
 
